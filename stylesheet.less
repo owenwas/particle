@@ -1,0 +1,128 @@
+/*	===============================
+	Colour Swatches
+	===============================	
+	"color1": == Background
+	"color2": == Contrast colour
+	"color3": == Button colour
+	"color4": == Title colour
+	"color5": == Paragraph colour
+	"color6": == Nav text colour
+	"color7": == Header BG colour
+	=============================== */
+
+/*	===============================
+	Font Swatches
+	===============================	
+	"font1":  == Heading 1
+	"font2":  == Heading 2
+	"font3":  == Heading 3
+	"font4":  == Heading 4
+	"font5":  == Paragraph
+	"font6":  == Navigation Text
+	"font7":  == Buttons
+	"font8":  == Feature Title
+	"font9":  == Feature Subtitle
+	"font10": == Logo
+	=============================== */
+
+@import "@{templateCommon}/basekit-bootstrap.less";
+@import "@{templateLocal}/css/ecommerce.less";
+@import "@{templateLocal}/css/widgets.less";
+
+// -----------------------------
+// Page Settings
+// -----------------------------
+
+// Wrapper 
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+    	width: 960px;
+    	margin: 0 auto;
+    }
+}
+
+ul, li {
+	margin: 0;
+	color: @color-swatch3;
+}
+
+// Blockquote 
+
+blockquote {
+  background: @color-swatch7;
+  border-left: 10px solid hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3,10%), 0.7);;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px 0px 50px;
+}
+blockquote:before {
+  color: @color-swatch5;
+  content: open-quote;
+  font-size: 4em;
+  padding-left: 10px;
+}
+
+blockquote p {
+  display: inline;
+}
+
+// -----------------------------
+// Page Content
+// -----------------------------
+.page-content {
+
+}
+
+// -----------------------------
+// Header
+// -----------------------------
+
+header.template-header {
+	position: absolute;
+	top: 30px;
+}
+
+// -----------------------------
+// Extended Navigation
+// -----------------------------
+
+.widget .extendednavigation a.pull {
+	top: 0;
+}
+
+// -----------------------------
+// Feature
+// -----------------------------
+
+.widget.feature {
+	height: 700px;
+	z-index: -1;
+	margin-bottom: 60px;
+	text-align: center;
+	h2 {
+		text-shadow: 2px 2px rgba(0,0,0, .2);
+	}
+}
+
+.nav {
+	float: right;
+	right: 0;
+
+}
+
+.logo {
+	float: left;
+
+}
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+footer.template-footer {
+}
+
+
+
+

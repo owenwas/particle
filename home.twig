@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+<section class="page home">
+
+	<div class="page-content">
+
+		{{widget('feature', 'featurehome', {"header": "KICK START YOUR BUSINESS", "strapline":"Creative Business Consultency", "buttonText":"Find out more","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+
+		{% include 'includes/header.twig' %}
+
+		<div class="wrapper">
+			{{zone('main')|raw}}
+		</div>
+	</div>
+
+	{% include 'includes/footer.twig' %}
+
+</section>
+
+{% endblock %}
